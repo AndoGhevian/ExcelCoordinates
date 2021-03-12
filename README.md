@@ -71,11 +71,11 @@ console.log(
     numToX('0'), // -> null
 
     YXToNumPair('A1'), // [ 0, 0 ], Argument Must match regex - /^([A-Z][A-Z]*)([1-9][0-9]*)$/
-    YXToNumPair('Z'), // [ null, null ]
-    YXToNumPair('26'), // [ null, null ]
-    YXToNumPair(0), // [ null, null ]
-    YXToNumPair(true), // [ null, null ]
-    YXToNumPair(null), // [ null, null ]
-    YXToNumPair(undefined), // [ null, null ]
+    YXToNumPair('Z'), // null
+    YXToNumPair('26'), // null
+    YXToNumPair(0), // null
+    YXToNumPair(true), // null
+    YXToNumPair(null), // null
+    YXToNumPair(undefined), // null
 )
 ```

@@ -1,13 +1,13 @@
-const YRegex = /^([A-Z][A-Z]*)$/
-const XRegex = /^([1-9][0-9]*)$/
+const YRegex = /^[A-Z][A-Z]*$/
+const XRegex = /^[1-9][0-9]*$/
 const YXRegex = /^([A-Z][A-Z]*)([1-9][0-9]*)$/
 
 
 function YXToNumPair(YX) {
-    if (typeof YX !== 'string') return [null, null]
+    if (typeof YX !== 'string') return null
 
     const match = YX.match(YXRegex)
-    if (!match) return [null, null]
+    if (!match) return null
 
     return [YToNum(match[1]), XToNum(match[2])]
 }
