@@ -1,0 +1,27 @@
+{
+  "name": "excel-coordinates",
+  "version": "1.0.0",
+  "description": "Convert Excel Coordinates to Simple Coordinate System",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon --watch . --ext js,ts --exec 'node index.js'"
+  },
+  "keywords": [
+    "excel",
+    "xlsx",
+    "coordinate",
+    "coord"
+  ],
+  "author": "Ando",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndoGhevian/ExcelCoordinates.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {}
+}
