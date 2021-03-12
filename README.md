@@ -3,9 +3,6 @@
 ## Description
 Convert **Excel Coordinates** to simple coordinate system, and vice versa.
 
-## Requirements
-- [node.js](https://nodejs.org/) -- v11.5.0 or newer
-
 ## Usage
 ```javascript
 const {
