@@ -46,14 +46,14 @@ console.log(
 For invalid arguments **nulls** will be returned:
 ```javascript
 console.log(
-    YToNum('A'), // -> 0, Argument Must match regex - /^([A-Z][A-Z]*)$/
+    YToNum('A'), // -> 0, Argument Must match regex - /^[A-Z][A-Z]*$/
     YToNum('asdsada'), // -> null
     YToNum(1), // -> null
     YToNum(undefined), // -> null
     YToNum(null), // -> null
     YToNum(true), // -> null
 
-    XToNum('1'), // -> 0, Argument Must match regex - /^([1-9][0-9]*)$/
+    XToNum('1'), // -> 0, Argument Must match regex - /^[1-9][0-9]*$/
     XToNum('0'), // -> null
     XToNum(1), // -> null
     XToNum(undefined), // -> null
@@ -70,7 +70,7 @@ console.log(
     numToX(0.5), // -> null
     numToX('0'), // -> null
 
-    YXToNumPair('A1'), // [ 0, 0 ], Argument Must match regex - /^([A-Z][A-Z]*)([1-9][0-9]*)$/
+    YXToNumPair('A1'), // [ 0, 0 ], Argument Must match regex - /^[A-Z][A-Z]*[1-9][0-9]*$/
     YXToNumPair('Z'), // null
     YXToNumPair('26'), // null
     YXToNumPair(0), // null
